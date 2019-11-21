@@ -1,6 +1,6 @@
 language: swift
 osx_image: xcode11
 script:
-  - xcodebuild -scheme ChurLocationExamples -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.0' build test
+  - xcodebuild -scheme ChurLocation -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.0' build test
 notifications:
   slack: churnetworks:HhhI7kgwC2fddvLJIK10oehB
