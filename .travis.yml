@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode11
+osx_image: xcode10
 env:
   - DESTINATION="OS=12.1,name=iPhone XS" SCHEME="ChurLocation" SDK=iphonesimulator12.0
 script:
