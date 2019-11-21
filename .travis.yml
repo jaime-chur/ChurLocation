@@ -1,1 +1,2 @@
-language: ruby
+language: swift
+osx_image: xcode11
