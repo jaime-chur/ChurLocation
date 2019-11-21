@@ -1,9 +1,11 @@
 language: swift
 osx_image: xcode10
 env:
-  - DESTINATION="OS=12.1,name=iPhone XS" SCHEME="ChurLocation" SDK=iphonesimulator12.0
+  matrix:
+    - TEST_SDK=iphonesimulator12.0 OS=12.1 NAME='iPhone XS'
+    - TEST_SDK=iphonesimulator12.0 OS=12.1 NAME='iPhone SE'
+
 script:
-  - xcodebuild clean build -workspace ChurLocation/ChurLocation.xcworkspace -scheme "$SCHEME" -sdk "$SDK"
-  - xcodebuild test -workspace ChurLocation/ChurLocation.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project ChurLocation.xcodeproj -scheme ChurLocation -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
 notifications:
   slack: churnetworks:HhhI7kgwC2fddvLJIK10oehB
