@@ -16,6 +16,7 @@
 		B35662F7238615A30027BE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35662F6238615A30027BE7B /* Assets.xcassets */; };
 		B35662FA238615A30027BE7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35662F9238615A30027BE7B /* Preview Assets.xcassets */; };
 		B35662FD238615A30027BE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35662FB238615A30027BE7B /* LaunchScreen.storyboard */; };
+		B356630323861A9B0027BE7B /* ChurLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356630223861A9B0027BE7B /* ChurLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B35662F9238615A30027BE7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B35662FC238615A30027BE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35662FE238615A30027BE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B356630223861A9B0027BE7B /* ChurLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B35662D323860F150027BE7B /* ChurLocation.h */,
 				B35662D423860F150027BE7B /* Info.plist */,
+				B356630223861A9B0027BE7B /* ChurLocation.swift */,
 			);
 			path = ChurLocation;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					B35662CF23860F150027BE7B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					B35662D823860F150027BE7B = {
 						CreatedOnToolsVersion = 11.0;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B356630323861A9B0027BE7B /* ChurLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		B35662E523860F150027BE7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
@@ -455,6 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +470,7 @@
 		B35662E623860F150027BE7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
@@ -489,9 +497,11 @@
 		B35662E823860F150027BE7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = ChurLocationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,9 +517,11 @@
 		B35662E923860F150027BE7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = ChurLocationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
