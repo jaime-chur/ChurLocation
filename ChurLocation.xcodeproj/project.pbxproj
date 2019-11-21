@@ -10,6 +10,12 @@
 		B35662DA23860F150027BE7B /* ChurLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35662D023860F150027BE7B /* ChurLocation.framework */; };
 		B35662DF23860F150027BE7B /* ChurLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35662DE23860F150027BE7B /* ChurLocationTests.swift */; };
 		B35662E123860F150027BE7B /* ChurLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = B35662D323860F150027BE7B /* ChurLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B35662F1238615A10027BE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35662F0238615A10027BE7B /* AppDelegate.swift */; };
+		B35662F3238615A10027BE7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35662F2238615A10027BE7B /* SceneDelegate.swift */; };
+		B35662F5238615A10027BE7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35662F4238615A10027BE7B /* ContentView.swift */; };
+		B35662F7238615A30027BE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35662F6238615A30027BE7B /* Assets.xcassets */; };
+		B35662FA238615A30027BE7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35662F9238615A30027BE7B /* Preview Assets.xcassets */; };
+		B35662FD238615A30027BE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35662FB238615A30027BE7B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		B35662D923860F150027BE7B /* ChurLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChurLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35662DE23860F150027BE7B /* ChurLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurLocationTests.swift; sourceTree = "<group>"; };
 		B35662E023860F150027BE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35662EE238615A10027BE7B /* ChurLocationExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurLocationExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35662F0238615A10027BE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B35662F2238615A10027BE7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B35662F4238615A10027BE7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B35662F6238615A30027BE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B35662F9238615A30027BE7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B35662FC238615A30027BE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B35662FE238615A30027BE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B35662EB238615A10027BE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				B35662D223860F150027BE7B /* ChurLocation */,
 				B35662DD23860F150027BE7B /* ChurLocationTests */,
+				B35662EF238615A10027BE7B /* ChurLocationExamples */,
 				B35662D123860F150027BE7B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				B35662D023860F150027BE7B /* ChurLocation.framework */,
 				B35662D923860F150027BE7B /* ChurLocationTests.xctest */,
+				B35662EE238615A10027BE7B /* ChurLocationExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,28 @@
 				B35662E023860F150027BE7B /* Info.plist */,
 			);
 			path = ChurLocationTests;
+			sourceTree = "<group>";
+		};
+		B35662EF238615A10027BE7B /* ChurLocationExamples */ = {
+			isa = PBXGroup;
+			children = (
+				B35662F0238615A10027BE7B /* AppDelegate.swift */,
+				B35662F2238615A10027BE7B /* SceneDelegate.swift */,
+				B35662F4238615A10027BE7B /* ContentView.swift */,
+				B35662F6238615A30027BE7B /* Assets.xcassets */,
+				B35662FB238615A30027BE7B /* LaunchScreen.storyboard */,
+				B35662FE238615A30027BE7B /* Info.plist */,
+				B35662F8238615A30027BE7B /* Preview Content */,
+			);
+			path = ChurLocationExamples;
+			sourceTree = "<group>";
+		};
+		B35662F8238615A30027BE7B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B35662F9238615A30027BE7B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +181,23 @@
 			productReference = B35662D923860F150027BE7B /* ChurLocationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B35662ED238615A10027BE7B /* ChurLocationExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35662FF238615A30027BE7B /* Build configuration list for PBXNativeTarget "ChurLocationExamples" */;
+			buildPhases = (
+				B35662EA238615A10027BE7B /* Sources */,
+				B35662EB238615A10027BE7B /* Frameworks */,
+				B35662EC238615A10027BE7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurLocationExamples;
+			productName = ChurLocationExamples;
+			productReference = B35662EE238615A10027BE7B /* ChurLocationExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +212,9 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					B35662D823860F150027BE7B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B35662ED238615A10027BE7B = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -169,6 +234,7 @@
 			targets = (
 				B35662CF23860F150027BE7B /* ChurLocation */,
 				B35662D823860F150027BE7B /* ChurLocationTests */,
+				B35662ED238615A10027BE7B /* ChurLocationExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +251,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35662EC238615A10027BE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35662FD238615A30027BE7B /* LaunchScreen.storyboard in Resources */,
+				B35662FA238615A30027BE7B /* Preview Assets.xcassets in Resources */,
+				B35662F7238615A30027BE7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +282,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B35662EA238615A10027BE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35662F1238615A10027BE7B /* AppDelegate.swift in Sources */,
+				B35662F3238615A10027BE7B /* SceneDelegate.swift in Sources */,
+				B35662F5238615A10027BE7B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -215,6 +301,17 @@
 			targetProxy = B35662DB23860F150027BE7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B35662FB238615A30027BE7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B35662FC238615A30027BE7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B35662E223860F150027BE7B /* Debug */ = {
@@ -348,6 +445,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChurLocation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.churnetworks.ChurLocation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +471,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChurLocation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.churnetworks.ChurLocation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,6 +522,46 @@
 			};
 			name = Release;
 		};
+		B3566300238615A30027BE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChurLocationExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ95R63YAQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChurLocationExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.churnetworks.ChurLocationExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3566301238615A30027BE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChurLocationExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ95R63YAQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChurLocationExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.churnetworks.ChurLocationExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +588,15 @@
 			buildConfigurations = (
 				B35662E823860F150027BE7B /* Debug */,
 				B35662E923860F150027BE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35662FF238615A30027BE7B /* Build configuration list for PBXNativeTarget "ChurLocationExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3566300238615A30027BE7B /* Debug */,
+				B3566301238615A30027BE7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
