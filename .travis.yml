@@ -1,7 +1,9 @@
 language: swift
 osx_image: xcode11
+env:
+  - DESTINATION="OS=12.1,name=iPhone XS" SCHEME="ChurLocation" SDK=iphonesimulator12.0
 script:
   - xcodebuild clean build -workspace ChurLocation/ChurLocation.xcworkspace -scheme "$SCHEME" -sdk "$SDK"
-  - xcodebuild test -workspace ChurLocation/XLProjectName.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
+  - xcodebuild test -workspace ChurLocation/ChurLocation.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
 notifications:
   slack: churnetworks:HhhI7kgwC2fddvLJIK10oehB
