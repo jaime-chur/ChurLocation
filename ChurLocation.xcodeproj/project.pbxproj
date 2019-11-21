@@ -543,6 +543,7 @@
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChurLocationExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +564,7 @@
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ChurLocationExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
